@@ -1,7 +1,7 @@
 .navbar{
     height:50px;
     width: 100%;
-    background-color: black;
+    background-color: #0C0C0C;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -59,4 +59,39 @@ select > option{
     display: flex;
     align-items: center;
     margin-left: 30px;
+}
+
+.boat_banner {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.boat_banner a img {
+    height: 150px;
+    width: 480px;
+}
+
+.display_ad {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 920px;
+    top: 15px;
+    font-size: 12px;
+}
+
+.close_banner {
+    display: none;
 }

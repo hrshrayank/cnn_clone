@@ -114,7 +114,7 @@ const Home = () => {
 
           <TopNewsRightPart>
             <div>
-              <img src='https://cdn.cnn.com/cnnnext/dam/assets/210302130915-school-shootings-lockdown-drills-15-medium-plus-169.jpg'></img>
+              <img src='https://cdn.cnn.com/cnnnext/dam/assets/210302130915-school-shootings-lockdown-drills-15-medium-plus-169.jpg' style={{zIndex:"0"}}></img>
               <ImageDesc1>
                 <p>
                   CDC releases new guidelines for fully vaccinated individuals
@@ -311,14 +311,18 @@ const TopNewsRightPart = styled.div`
   width: 30%;
   text-align: center;
   height: 100%;
+  z-index: 0;
 
   div {
     margin-bottom: 150px;
+    z-index: 0;
+    position: relative;
   }
 
   img {
     height: 150px;
     width: 250px;
+    z-index: 0;
   }
 `
 
@@ -328,9 +332,9 @@ const ImageDesc1 = styled.div`
   width: 200px;
   display: flex;
   font-size: 22px;
-  position: absolute;
-  top: 300px;
-  right: 13%;
+  margin-top: -50px;
+  margin-left: 21%;
+  z-index: 999999;
 `
 
 const ImageDesc2 = styled.div`
@@ -339,9 +343,9 @@ const ImageDesc2 = styled.div`
   width: 200px;
   display: flex;
   font-size: 22px;
-  position: absolute;
-  top: 610px;
-  right: 13%;
+  z-index: 999999;
+  margin-top: -40px;
+  margin-left: 21%;
 `
 
 const Headings = styled.div`
